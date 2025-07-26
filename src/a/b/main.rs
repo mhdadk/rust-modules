@@ -4,5 +4,7 @@ pub struct B {
 }
 // the import below is only there to demonstrate how importing from a module in
 // another directory works. It is not used.
+// The first "super" refers to directory "b" while the second "super" refers to
+// directory "a".
 #[allow(unused_imports)]
 use super::super::c::main::C;
